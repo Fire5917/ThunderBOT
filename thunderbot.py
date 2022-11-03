@@ -197,33 +197,52 @@ while True:
         except:
             Write.Print(f"\n{ai_name} >>> [ ! ] No internet connexion", Colors.red, interval=0.025)
     elif questionrep[:15] == "mysterious play" and level_mysterious == 0:
-        Write.Print(f"{ai_name} >>> Welcome in the game, there is {number_of_step} steps in this game for the moment.\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> First , all my congratulations for passing the step 0 !\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> You are now at the step number 1 and you have to think about apple and minecraft\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> To go to the step number 2 you have to say << mysterious play (word) >> \n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> Good luck !", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> Welcome in the game, there is {number_of_step} steps in this game for the moment.\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> First , all my congratulations for passing the step 0 !\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> You are now at the step number 1 and you have to think about apple and minecraft\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> To go to the step number 2 you have to say << mysterious play (word) >> \n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> Good luck !", Colors.blue_to_red, interval=0.025)
         level_mysterious = 1
     elif questionrep[:28] == "mysterious play golden apple" and level_mysterious == 1:
-        Write.Print(f"{ai_name} >>> Welcome in the game, there is {number_of_step} steps in this game for the moment.\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> First , all my congratulations for passing the step 1 !\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> You are now at the step number 2 and you have to think about hacker and legend\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> To go to the step number 3 you have to say << mysterious play (word) >> \n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> Good luck !", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> Welcome in the game, there is {number_of_step} steps in this game for the moment.\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> First , all my congratulations for passing the step 1 !\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> You are now at the step number 2 and you have to think about hacker and legend\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> To go to the step number 3 you have to say << mysterious play (word) >> \n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> Good luck !", Colors.blue_to_red, interval=0.025)
         level_mysterious = 2
     elif questionrep[:25] == "mysterious play anonymous" and level_mysterious == 2:
-        Write.Print(f"{ai_name} >>> Welcome in the game, there is {number_of_step} steps in this game for the moment.\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> First , all my congratulations for passing the step 2 !\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> You are now at the step number 3 and you have to think about square and 5\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> To go to the step number 4 you have to say << m play (number1) (number2) >> \n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> Welcome in the game, there is {number_of_step} steps in this game for the moment.\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> First , all my congratulations for passing the step 2 !\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> You are now at the step number 3 and you have to think about square and 5\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> To go to the step number 4 you have to say << m play (number1) (number2) >> \n", Colors.blue_to_red, interval=0.025)
         level_mysterious = 3
     elif questionrep[:11] == "m play 5 25" and level_mysterious == 3:
-        Write.Print(f"{ai_name} >>> Welcome in the game, there is {number_of_step} steps in this game for the moment.\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> First , all my congratulations for passing the step 3 !\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> You are now at the step number 4 and you have to think about square and 5\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> To go to the step number 5 you have to say << SOON >> \n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> Welcome in the game, there is {number_of_step} steps in this game for the moment.\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> First , all my congratulations for passing the step 3 !\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> You are now at the step number 4 and you have to think about square and 5\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"[UNKNOW_-_-_PERSON] >>> To go to the step number 5 you have to say << SOON >> \n", Colors.blue_to_red, interval=0.025)
         level_mysterious = 4
     elif questionrep[:9] == "thank you" or questionrep[:6] == "thanks":
         Write.Print(f"{ai_name} >>> You are welcome\n", Colors.blue_to_red, interval=0.025)
+    elif questionrep == "help":
+        Write.Print(f"{ai_name} >>> Here is the help menu\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> help : display the help menu\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> translate : allow to do a translation\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> what time is it / gettime : get the time\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> what's your name : know the name of this AI and allow you to change it\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> joke / make joke : do a joke\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> yo / hello / hi : say hi to you\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> thanks / thank you : say you are welcome\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> say (what you want to say) : the bot say what you want to say\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> video (search) : search a video on the subject you want\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> wikipedia (search) : do a seacrh on wikipedia\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> google (search) : do a search on google for you\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> randomnumber : say to you a random number\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> make password : create a secure password for you\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> secure search (search) : do a secure search for you\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> help1 : a chalenge for you\n", Colors.blue_to_red, interval=0.025)
+    elif questionrep[:5] == "help1":
+        Write.Print(f"{ai_name} >>> Mysterious play...", Colors.blue_to_red, interval=0.025)
     else:
         Write.Print(f"{ai_name} >>> I don't have any results directly in my program, do you want me to search the web for you? ", Colors.blue_to_red, interval=0.025)
         old_questionrep = questionrep
@@ -246,5 +265,3 @@ while True:
         else:
             Write.Print(f"{ai_name} >>> Ok, no problem", Colors.blue_to_red, interval=0.025)
                         
-                    
-
