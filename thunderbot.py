@@ -66,7 +66,14 @@ def question():
     questionrep = Write.Input(f"{pseudo} >>> ", Colors.red_to_yellow, interval=0.025).lower().replace("'s", " is")
     print(colorama.Fore.GREEN)
 Write.Print(f"{ai_name} >>> Nice to meet you, {pseudo}!", Colors.blue_to_red, interval=0.05)
+nbr_questions = 0
+nbr_answer = 0
+percentage_sucess = "Unknow"
 while True:
+    if nbr_questions > 0:
+        percentage_sucess = (nbr_answer / nbr_questions)*100
+        percentage_sucess = int(percentage_sucess)
+    os.system(f'title [{pseudo}] - AI by Fire5917 - Number of questions : {nbr_questions} - Number of answer : {nbr_answer} - Percentage of success : {percentage_sucess}%')
     question()
     if questionrep[:5] == "hello" or questionrep[:2] == "hi" or questionrep == "yo":
         Write.Print(f"{ai_name} >>> Hi ! How are you?", Colors.blue_to_red, interval=0.025)
@@ -264,7 +271,7 @@ while True:
         Write.Print(f"{ai_name} >>> secure search (search) : do a secure search for you\n", Colors.blue_to_red, interval=0.025)
         Write.Print(f"{ai_name} >>> leave / quit : leave the window\n", Colors.blue_to_red, interval=0.025)
         Write.Print(f"{ai_name} >>> hack prank : open a lot of cmd windows\n", Colors.blue_to_red, interval=0.025)
-        Write.Print(f"{ai_name} >>> what's my name : allow you to see and change your name", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> what's my name : allow you to see and change your name\n", Colors.blue_to_red, interval=0.025)
         Write.Print(f"{ai_name} >>> help1 : a chalenge for you\n", Colors.blue_to_red, interval=0.025)
     elif questionrep[:5] == "help1":
         Write.Print(f"{ai_name} >>> Mysterious play...", Colors.blue_to_red, interval=0.025)
@@ -278,6 +285,7 @@ while True:
         else:
             Write.Print(f"{ai_name} >>> OK", Colors.blue_to_red, interval=0.025)
     else:
+        nbr_answer = nbr_answer - 1
         Write.Print(f"{ai_name} >>> I don't have any results directly in my program, do you want me to search the web for you? ", Colors.blue_to_red, interval=0.025)
         old_questionrep = questionrep
         question()
@@ -298,4 +306,6 @@ while True:
                     Write.Print(f"{ai_name} >>> No answer available for your question... Try using google (search)", Colors.blue_to_red, interval=0.025)
         else:
             Write.Print(f"{ai_name} >>> Ok, no problem", Colors.blue_to_red, interval=0.025)
+    nbr_answer += 1
+    nbr_questions += 1
                         
