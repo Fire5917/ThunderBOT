@@ -63,7 +63,7 @@ os.system(f'title [{pseudo}] - AI by Fire5917')
 def question():
     print(colorama.Fore.WHITE)
     global questionrep
-    questionrep = Write.Input(f"{pseudo} >>> ", Colors.red_to_yellow, interval=0.025).lower()
+    questionrep = Write.Input(f"{pseudo} >>> ", Colors.red_to_yellow, interval=0.025).lower().replace("'s", " is")
     print(colorama.Fore.GREEN)
 Write.Print(f"{ai_name} >>> Nice to meet you, {pseudo}!", Colors.blue_to_red, interval=0.05)
 while True:
@@ -98,7 +98,7 @@ while True:
             Write.Print(f"{ai_name} >>> No answer available for your question... Try using wikipedia (search)", Colors.blue_to_red, interval=0.025)
     elif questionrep[:4] == 'fuck' or questionrep[:12] == "you are dumb" or questionrep[:14] == "you are stupid":
         Write.Print(f'{ai_name} >>> Fuck you {pseudo} !', Colors.blue_to_red, interval=0.025)
-    elif questionrep[:16] == "what's your name":
+    elif questionrep[:17] == "what is your name":
         Write.Print(f'{ai_name} >>> My name is {ai_name}, I am an AI developed by Fire5917', Colors.blue_to_red, interval=0.025)
         Write.Print(f'\n{ai_name} >>> Do you want to change my name? ', Colors.blue_to_red, interval=0.025)
         question()
@@ -224,6 +224,28 @@ while True:
         level_mysterious = 4
     elif questionrep[:9] == "thank you" or questionrep[:6] == "thanks":
         Write.Print(f"{ai_name} >>> You are welcome\n", Colors.blue_to_red, interval=0.025)
+    elif questionrep[:5] == "leave" or questionrep[:4] == "quit":
+        x = 5
+        print("LOADING...")
+        for i in range(10):
+            time.sleep(0.5)
+            x  = x - 0.5
+            os.system('cls 1')
+            print(f"{ai_name} >>> {x} seconds left")
+        exit()
+    elif questionrep[:10] == "hack prank":
+        Write.Print(f"{ai_name} >>> Are you sure to do that?\n", Colors.blue_to_red, interval=0.025)
+        question()
+        if questionrep[:3] == "yes":
+            Write.Print(f"{ai_name} >>> How many times?\n", Colors.blue_to_red, interval=0.025)
+            question()
+            how_many_time = int(questionrep)
+            os.system('color 2')
+            os.system('dir/s')
+            for i in range(how_many_time):
+                os.system('start')
+        else:
+            Write.Print(f"{ai_name} >>> That is better for you\n", Colors.blue_to_red, interval=0.025)
     elif questionrep == "help":
         Write.Print(f"{ai_name} >>> Here is the help menu\n", Colors.blue_to_red, interval=0.025)
         Write.Print(f"{ai_name} >>> help : display the help menu\n", Colors.blue_to_red, interval=0.025)
@@ -240,9 +262,21 @@ while True:
         Write.Print(f"{ai_name} >>> randomnumber : say to you a random number\n", Colors.blue_to_red, interval=0.025)
         Write.Print(f"{ai_name} >>> make password : create a secure password for you\n", Colors.blue_to_red, interval=0.025)
         Write.Print(f"{ai_name} >>> secure search (search) : do a secure search for you\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> leave / quit : leave the window\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> hack prank : open a lot of cmd windows\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> what's my name : allow you to see and change your name", Colors.blue_to_red, interval=0.025)
         Write.Print(f"{ai_name} >>> help1 : a chalenge for you\n", Colors.blue_to_red, interval=0.025)
     elif questionrep[:5] == "help1":
         Write.Print(f"{ai_name} >>> Mysterious play...", Colors.blue_to_red, interval=0.025)
+    elif questionrep[:15] == "what is my name":
+        Write.Print(f"{ai_name} >>> Your name is {pseudo}\n", Colors.blue_to_red, interval=0.025)
+        Write.Print(f"{ai_name} >>> Do you want to change your name?", Colors.blue_to_red, interval=0.025)
+        question()
+        if questionrep == "yes":
+            pseudo = Write.Input(f"{ai_name} >>> What is your new name >>> ", Colors.blue_to_red, interval=0.025)
+            Write.Print(f"\n{ai_name} >>> Your name is now set to {pseudo}", Colors.blue_to_red, interval=0.025)
+        else:
+            Write.Print(f"{ai_name} >>> OK", Colors.blue_to_red, interval=0.025)
     else:
         Write.Print(f"{ai_name} >>> I don't have any results directly in my program, do you want me to search the web for you? ", Colors.blue_to_red, interval=0.025)
         old_questionrep = questionrep
