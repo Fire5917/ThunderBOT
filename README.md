@@ -1,5 +1,8 @@
 # ThunderBOT
+
 An AI developed by Fire5917
+
+## Features
 
 ThunderBot >>> Here is the help menu
 ThunderBot >>> help : display the help menu
@@ -20,3 +23,19 @@ ThunderBot >>> leave / quit : leave the window
 ThunderBot >>> hack prank : open a lot of cmd windows
 ThunderBot >>> what's my name : allow you to see and change your name
 ThunderBot >>> help1 : a chalenge for you
+
+
+## 🛠 Skills
+Python
+
+
+## Used By
+
+This project is used by the following companies:
+
+- Thunder Studio
+
+
+## Screenshots
+
+![App Screenshot](https://cdn.discordapp.com/attachments/800451077005770793/1038140449589821512/unknown.png)
